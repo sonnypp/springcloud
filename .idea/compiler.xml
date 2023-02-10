@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eu-consumer" />
+        <module name="eu-zuul" />
+        <module name="eu-server" />
+        <module name="eu-producter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eu-article-service" target="11" />
+      <module name="eu-gate-zuul" target="11" />
+      <module name="eureka-server" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eu-article-service" options="-parameters" />
+      <module name="eu-consumer" options="-parameters" />
+      <module name="eu-gate-zuul" options="-parameters" />
+      <module name="eu-producter" options="-parameters" />
+      <module name="eu-server" options="-parameters" />
+      <module name="eu-zuul" options="-parameters" />
+      <module name="eureka-server" options="" />
+    </option>
+  </component>
+</project>
