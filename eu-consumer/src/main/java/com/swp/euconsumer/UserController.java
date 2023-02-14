@@ -15,4 +15,12 @@ public class UserController {
     public String gethelloString() {
         return this.restTemplate.getForObject("http://localhost:8083/hello", String.class);
     }
+
+    @Autowired
+    private TestService testService;
+
+    @GetMapping("/test")
+    public String getHelloString() {
+        return testService.hello();
+    }
 }
